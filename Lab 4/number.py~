@@ -1,0 +1,19 @@
+class Integer(object):
+	def __init__(self,number):
+		self.number = number
+
+	def Display(self, np):
+		if np == "negative":
+			print (self.number - 2*self.number)
+		elif np == "positive":
+		 	print self.number
+
+		
+if __name__=="__main__":
+   	print "Michele"
+
+	print "Enter a number"	
+	test = Integer(input())
+	print "negative or positive?"
+	np = raw_input()
+	test.Display(np)
